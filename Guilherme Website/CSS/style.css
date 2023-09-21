@@ -1,0 +1,45 @@
+/* Define colors */
+:root {
+    --primary-color:    #87A330;
+    --secondary-color:  #0F0E0E;
+    --background-color: #FBF5F3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mooli', sans-serif;
+}
+
+main {
+    height: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 70vw;
+    margin: auto;
+    grid-column-gap: 1em;
+    padding-top: 1em;
+}
+main > div > div {
+    margin-bottom: 1.5em;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 1em;
+}
+h3 {
+    color: var(--primary-color);
+}
+li {
+    padding-left: 1.5em;
+    list-style-position: inside;
+    color: var(--secondary-color);
+}
+p,h4 {
+    color: var(--secondary-color);
+}

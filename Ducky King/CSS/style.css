@@ -1,0 +1,167 @@
+/* img {
+    width: 20%;
+}
+body {
+    background-color: lightgray;
+  }
+  
+h1 {
+    color: darkgreen;
+    text-align: center;
+}
+  
+p {
+    font-family: verdana;
+    font-size: 18px;
+}
+#ducks > div {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 2em;
+}
+h3:hover {
+    color: darkgreen;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+img {
+    width: 20%;
+    box-shadow: 3px 3px 5px gray;
+}
+button {
+    background-color: lightblue;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: dodgerblue;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+
+}
+@media screen and (max-width: 768px) {
+    #ducks > div {
+        flex-wrap: wrap;
+    }
+}
+#contact {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+} */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Mooli', sans-serif;
+    box-sizing: border-box;
+    background-image: url(webb.png);
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #e8eb2b;
+    padding: 1em 6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+main {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#hero img {
+    width: 60%;
+    border-radius: 100%;
+    padding: 5em;
+}
+#hero hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+}
+section:not(:first-child) {
+    width: 70vw;
+    margin: auto;
+}
+
+#ducks {
+    display: flex;
+    flex-direction: column;
+}
+#ducks > div {
+    display: grid;
+    grid-template-areas: 
+    "img img info"
+    "img img details";
+    padding: 1em;
+    gap: 1em;
+}
+#ducks > div > img {
+    grid-area: img;
+    height: 30vh;
+    border-radius: 10%;
+    padding: 1em;
+    background-color: white;
+    border: 0.3em solid black;
+}
+#ducks > div > div {
+    grid-area: info;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#ducks > div > p {
+    grid-area: details;
+    padding: 1em;
+}
+#ducks > div:hover > div {
+    font-size: 150%;
+    transition: font-size 0.3s ease;
+}
+
+#contact {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #e8eb2b;
+    padding: 1em;
+    text-align: center;
+}
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+nav ul a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav ul a:hover {
+    color: darkgreen;
+}
+
+
+/* img {width: 10vw;} */
